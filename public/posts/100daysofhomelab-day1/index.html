@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>#100daysofhomelab - Day 1 - Maintenance and Website - Andrew Welch</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="Introduction So, after being inspired by TechnoTim and SysAdminAfterDark and some inspiration to learn more, both about new things and expanding on old knowledge, I decided I&rsquo;d give 100 Days of Homelab a go. I&rsquo;ve already got a homelab running, but it&rsquo;s a bit of a mess and needs some TLC, and this has also motivated me to get this website working properly, so it&rsquo;s time to get started.
+My Existing Homelab I haven&rsquo;t got a diagram yet (lets add that to the list now) so I&rsquo;ll just describe my homelab." />
+  <meta name="author" content="Andrew Welch" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://andrewwelch.net/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://andrewwelch.net/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://andrewwelch.net/theme.png" />
+
+  
+  
+  
+  
+
+  
+
+  
+  <link rel="icon" href="https://andrewwelch.net/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://andrewwelch.net/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.98.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="#100daysofhomelab - Day 1 - Maintenance and Website" />
+<meta property="og:description" content="Introduction So, after being inspired by TechnoTim and SysAdminAfterDark and some inspiration to learn more, both about new things and expanding on old knowledge, I decided I&rsquo;d give 100 Days of Homelab a go. I&rsquo;ve already got a homelab running, but it&rsquo;s a bit of a mess and needs some TLC, and this has also motivated me to get this website working properly, so it&rsquo;s time to get started.
+My Existing Homelab I haven&rsquo;t got a diagram yet (lets add that to the list now) so I&rsquo;ll just describe my homelab." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andrewwelch.net/posts/100daysofhomelab-day1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-11T18:38:06+09:30" />
+<meta property="article:modified_time" content="2023-04-11T18:38:06+09:30" />
+
+
+  
+  <meta itemprop="name" content="#100daysofhomelab - Day 1 - Maintenance and Website">
+<meta itemprop="description" content="Introduction So, after being inspired by TechnoTim and SysAdminAfterDark and some inspiration to learn more, both about new things and expanding on old knowledge, I decided I&rsquo;d give 100 Days of Homelab a go. I&rsquo;ve already got a homelab running, but it&rsquo;s a bit of a mess and needs some TLC, and this has also motivated me to get this website working properly, so it&rsquo;s time to get started.
+My Existing Homelab I haven&rsquo;t got a diagram yet (lets add that to the list now) so I&rsquo;ll just describe my homelab."><meta itemprop="datePublished" content="2023-04-11T18:38:06+09:30" />
+<meta itemprop="dateModified" content="2023-04-11T18:38:06+09:30" />
+<meta itemprop="wordCount" content="386">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="#100daysofhomelab - Day 1 - Maintenance and Website"/>
+<meta name="twitter:description" content="Introduction So, after being inspired by TechnoTim and SysAdminAfterDark and some inspiration to learn more, both about new things and expanding on old knowledge, I decided I&rsquo;d give 100 Days of Homelab a go. I&rsquo;ve already got a homelab running, but it&rsquo;s a bit of a mess and needs some TLC, and this has also motivated me to get this website working properly, so it&rsquo;s time to get started.
+My Existing Homelab I haven&rsquo;t got a diagram yet (lets add that to the list now) so I&rsquo;ll just describe my homelab."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold"
+      href="https://andrewwelch.net/"
+      >Andrew Welch</a
+    >
+    <div
+      class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Home</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">#100daysofhomelab - Day 1 - Maintenance and Website</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Apr 11, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="introduction">Introduction</h2>
+<p>So, after being inspired by <a href="https://twitter.com/TechnoTimLive">TechnoTim</a> and <a href="https://twitter.com/sysadafterdark">SysAdminAfterDark</a> and some inspiration to learn more, both about new things and expanding on old knowledge, I decided I&rsquo;d give <a href="https://100daysofhomelab.com">100 Days of Homelab</a> a go. I&rsquo;ve already got a homelab running, but it&rsquo;s a bit of a mess and needs some TLC, and this has also motivated me to get this website working properly, so it&rsquo;s time to get started.</p>
+<h2 id="my-existing-homelab">My Existing Homelab</h2>
+<p>I haven&rsquo;t got a diagram yet (lets add that to the list now) so I&rsquo;ll just describe my homelab.
+I currently have two locations, my home and my colocation.</p>
+<p>Home consists of a FortiGate as a firewall/router, some fanless Cisco Catalyst switches to connect everything together, UniFi UAP Lites for wireless, and an old PC repurposed as a Proxmox server for VMs that need to be local to my house. There&rsquo;s also a NetGear and Synology NAS for backups and other storage. Eventually I&rsquo;ll look at some PCs like the Lenovo Tiny/HP Mini/Dell Micro range for some extra home Proxmox nodes in a cluster, to give me some more local lab capacity.</p>
+<p>Colocation consists of a FortiGate as a firewall/router (with IPsec back to home), as well as a Dell R720 as a Proxmox server, Dell R210 II for Proxmox Backup Server, and a Dell R515 with TrueNAS for media storage. Most of the heavy lifting is done out of here currently, but this setup is a bit of a mess and I&rsquo;d love to get some better segmentation and a more logical setup of VMs between here and home.</p>
+<p>I also partake in <a href="https://dn42.eu">DN42</a>, with a VyOS router and a couple of servers on the Proxmox server in colo, as well as routers in Vultr London and Los Angeles, and soon Tokyo.</p>
+<h2 id="day-1">Day 1</h2>
+<p>Today mostly consisted of a bit of a tidy up of the Proxmox host in colo, moving storage around to free up some space on the SSD storage for servers that need the extra speed, and moving anything less important over to HDD storage where I&rsquo;ve got plenty of space currently.</p>
+<p>I also spent some time getting this site up and running on my web server VM in colo.</p>
+<p>If you&rsquo;re following along, follow me on <a href="https://twitter.com/andrewtwelch">Twitter</a> as I go through the adventure that is 100 Days of Homelab.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://andrewwelch.net/">Andrew Welch</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >Theme Paper</a
+  >
+</footer>
+
+  </body>
+</html>

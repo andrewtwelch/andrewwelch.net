@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Andrew Welch</title>
+    <link>https://andrewwelch.net/posts/</link>
+    <description>Recent content in Posts on Andrew Welch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Apr 2023 18:38:06 +0930</lastBuildDate><atom:link href="https://andrewwelch.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#100daysofhomelab - Day 1 - Maintenance and Website</title>
+      <link>https://andrewwelch.net/posts/100daysofhomelab-day1/</link>
+      <pubDate>Tue, 11 Apr 2023 18:38:06 +0930</pubDate>
+      
+      <guid>https://andrewwelch.net/posts/100daysofhomelab-day1/</guid>
+      <description>Introduction So, after being inspired by TechnoTim and SysAdminAfterDark and some inspiration to learn more, both about new things and expanding on old knowledge, I decided I&amp;rsquo;d give 100 Days of Homelab a go. I&amp;rsquo;ve already got a homelab running, but it&amp;rsquo;s a bit of a mess and needs some TLC, and this has also motivated me to get this website working properly, so it&amp;rsquo;s time to get started.
+My Existing Homelab I haven&amp;rsquo;t got a diagram yet (lets add that to the list now) so I&amp;rsquo;ll just describe my homelab.</description>
+    </item>
+    
+  </channel>
+</rss>
