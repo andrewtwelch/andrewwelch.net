@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Andrew Welch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2023 18:38:06 +0930</lastBuildDate><atom:link href="https://andrewwelch.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Apr 2023 14:15:16 +0930</lastBuildDate><atom:link href="https://andrewwelch.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#100daysofhomelab - Day2 - DroneCI and Ubuntu Cloud Templates</title>
+      <link>https://andrewwelch.net/posts/100daysofhomelab-day2/</link>
+      <pubDate>Wed, 12 Apr 2023 14:15:16 +0930</pubDate>
+      
+      <guid>https://andrewwelch.net/posts/100daysofhomelab-day2/</guid>
+      <description>Day 2 Today I wanted to get two things done:
+ Automatic website updates Easier VM deployments  I figured the best way to do this would be to setup DroneCI to handle the website updates (and other future CI tasks), and to help make new VM setups quicker in the future, I decided I&amp;rsquo;d deploy a Ubuntu cloud image template on my Proxmox server in Colo.
+Ubuntu Cloud Template Last night I watched Techno Tim&amp;rsquo;s video on this topic, and then this morning decided to follow along, downloading the Ubuntu Cloud image for 22.</description>
+    </item>
+    
     <item>
       <title>#100daysofhomelab - Day 1 - Maintenance and Website</title>
       <link>https://andrewwelch.net/posts/100daysofhomelab-day1/</link>
