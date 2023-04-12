@@ -23,6 +23,12 @@ After that, I used that template to set up a new VM, dedicated to DroneCI. Once 
 
 Once DroneCI was up and running, I went about setting up my .drone.yml file to automatically build and deploy this website to my web server, thankfully Thomas Leister has a pretty decent [guide](https://thomas-leister.de/en/drone-ci-with-codeberg) that covers this. After spending time trying to figure out why DroneCI wasn't able to connect to my web server (I forgot to add the SSH key after generating it on the web server), I was able to get it to successfully complete a CI build, and now, this post should automatically be available shortly after my pull request from the staging branch to main.
 
+### Update
+
+After pushing this, I found a few more issues. For some reason, the theme submodule wasn't being cloned by DroneCI (turns out this is default behaviour), but I thought something was wrong with the image. So now I've learned how to build a Docker image from a Dockerfile, since the image I was using before was several years old. When that still didn't work, I discovered the submodule issue, changed my .drone.yml file to include a step that clones the submodule in, and now I've got a website that automatically updates!
+
+I also created a staging site for this now, so I can see changes as they are pushed to my staging branch, with the main site being updated when a pull request is made into the main branch.
+
 ## Tomorrow
 
 Tomorrow I reckon I'll start looking at some Infrastructure as Code basics, starting with managing one or two of my domains in Cloudflare with Terraform, with the goal to expand that further for easier management.
