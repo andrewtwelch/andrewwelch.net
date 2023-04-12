@@ -10,18 +10,18 @@ trigger:
 
 steps:
 - name: Version check
-  image: razonyang/hugo
+  image: andrewtwelch/docker-hugo
   commands:
   - echo "Checking Hugo version."
   - hugo version
 
 - name: Build
-  image: razonyang/hugo
+  image: andrewtwelch/docker-hugo
   commands:
   - hugo --minify --destination /drone/src/build
 
 - name: Upload
-  image: razonyang/hugo
+  image: andrewtwelch/docker-hugo
   commands:
   - eval `ssh-agent -s`
   - echo "$SSH_KEY" | ssh-add -
@@ -45,18 +45,18 @@ trigger:
 
 steps:
 - name: Version check
-  image: razonyang/hugo
+  image: andrewtwelch/docker-hugo
   commands:
   - echo "Checking Hugo version."
   - hugo version
 
 - name: Build
-  image: razonyang/hugo
+  image: andrewtwelch/docker-hugo
   commands:
   - hugo --minify --destination /drone/src/build
 
 - name: Upload
-  image: razonyang/hugo
+  image: andrewtwelch/docker-hugo
   commands:
   - eval `ssh-agent -s`
   - echo "$SSH_KEY" | ssh-add -
