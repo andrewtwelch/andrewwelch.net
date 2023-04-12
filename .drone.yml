@@ -19,7 +19,6 @@ steps:
   image: razonyang/hugo
   commands:
   - hugo --minify --destination /drone/src/build
-  - minify -r -o /drone/src/build /drone/src/build
 
 - name: Upload
   image: razonyang/hugo
@@ -54,8 +53,7 @@ steps:
 - name: Build
   image: razonyang/hugo
   commands:
-  - hugo --destination /drone/src/build
-  - minify -r -o /drone/src/build /drone/src/build
+  - hugo --minify --destination /drone/src/build
 
 - name: Upload
   image: razonyang/hugo
