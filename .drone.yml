@@ -9,6 +9,11 @@ trigger:
     - push
 
 steps:
+- name: Submodules
+  image: alpine/git
+  commands:
+  - git submodule update --init --recursive
+
 - name: Version check
   image: andrewtwelch/docker-hugo
   commands:
@@ -44,6 +49,11 @@ trigger:
     - push
 
 steps:
+- name: Submodules
+  image: alpine/git
+  commands:
+  - git submodule update --init --recursive
+  
 - name: Version check
   image: andrewtwelch/docker-hugo
   commands:
