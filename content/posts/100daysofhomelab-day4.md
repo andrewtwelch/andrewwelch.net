@@ -1,7 +1,7 @@
 ---
 title: "#100daysofhomelab - Day 4 - OS Updates"
 date: 2023-04-14T21:21:17+09:30
-draft: true
+draft: false
 ---
 
 ## Manual Updates
