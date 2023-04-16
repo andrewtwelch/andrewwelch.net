@@ -53,6 +53,11 @@ steps:
   image: alpine/git
   commands:
   - git submodule update --init --recursive
+
+- name: Update config.toml to Staging URL
+  image: alpine
+  commands:
+  - sed -i 's/andrewwelch.net/staging.andrewwelch.net/g' config.toml
   
 - name: Version check
   image: andrewtwelch/docker-hugo
