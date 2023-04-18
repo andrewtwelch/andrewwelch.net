@@ -15,5 +15,5 @@ sectionPagesMenu = 'menu'
   weight = 2
 [[menu.main]]
   name = "Mastodon"
-  url = "https://social.andrewwelch.net/@fortera
+  url = "https://social.andrewwelch.net/@fortera"
   weight = 10
