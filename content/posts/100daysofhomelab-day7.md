@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 7 - Mastodon: Part 1"
 date: 2023-04-17T21:47:32+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Mastodon, and not getting there

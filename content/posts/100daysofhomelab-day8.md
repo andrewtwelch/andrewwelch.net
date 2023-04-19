@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 8 - Mastodon Part 2 and Matrix"
 date: 2023-04-18T17:57:59+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Mastodon Part 2

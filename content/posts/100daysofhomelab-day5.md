@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 5 - Finishing an IPAM Migration"
 date: 2023-04-15T19:37:46+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Gotta track 'em all!
