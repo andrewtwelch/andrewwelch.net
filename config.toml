@@ -4,6 +4,9 @@ title = 'Andrew Welch'
 theme = 'paper'
 sectionPagesMenu = 'menu'
 
+[taxonomies]
+  tag = 'tags'
+
 [menu]
 [[menu.main]]
   name = "Home"

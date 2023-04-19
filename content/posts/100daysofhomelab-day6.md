@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 6 - Cloudflare Tunnels"
 date: 2023-04-16T11:30:43+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Tunnels to the Cloud

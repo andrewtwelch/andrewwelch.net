@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 2 - DroneCI and Ubuntu Cloud Templates"
 date: 2023-04-12T14:15:16+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Day 2

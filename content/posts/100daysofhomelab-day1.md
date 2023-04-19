@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 1 - Maintenance and Website"
 date: 2023-04-11T18:38:06+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Introduction

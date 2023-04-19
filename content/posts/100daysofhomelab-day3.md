@@ -2,6 +2,7 @@
 title: "#100daysofhomelab - Day 3 - Terraform and Cloudflare DNS"
 date: 2023-04-13T20:07:29+09:30
 draft: false
+tags: ["100daysofhomelab", "homelab"]
 ---
 
 ## Day 3
